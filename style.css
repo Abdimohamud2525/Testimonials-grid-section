@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #edf2f8;
+    font-size: 13px;
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     line-height: 1.5;
+
+}
+.Testimonials{
+    max-width: 1440px;
+    margin: 100px auto;
+     padding: 20px;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 30px;
+
+}
+.cards{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(17, 12,46 , 0.15) 0px 48px 100px 0px;
+    margin-bottom: 10px;
+}
+
+.card-header{
+   display: flex; 
+   margin-bottom: 10px;
+   align-items: center;
+}
+.card-header h3{
+    font-size: 15px;
+
+}
+.card-header p{
+    opacity: 50%;
+}
+.card-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #996ed5;
+    margin-right: 10px;
+}
+.card_lead{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+ .card_quotes{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    opacity: 70%;
+}
+.cards-bg-purple{
+    background-color: hsl(263,55%,52%);
+    color: #ffff;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top 10px right 100px;
+}
+.cards-bg-gray-blue{
+    background-color: hsl(217,19%,35%);
+    color: #fff;
+}
+.cards-bg-black-blue{
+    background-color: hsl(219,29%,14%);
+    color: #fff;
+}
+footer{
+    text-align: center;
+}
+.cards:nth-child(1){
+    grid-column: 1/3;
+}
+.cards:nth-child(4){
+    grid-column: 2/4;
+    grid-row: 2;
+}
+.cards:nth-child(5){
+    grid-column: 4;
+     grid-row: 1/3
+}
+@media(max-width: 768px){
+    .Testimonials{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .cards:nth-child(1){
+        grid-column: 1;
+    }
+    .cards:nth-child(4){
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .cards:nth-child(5){
+        grid-column: 1;
+         grid-row: 5
+    }
+
+}
